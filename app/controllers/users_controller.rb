@@ -48,17 +48,17 @@ class UsersController < ApplicationController
     # Find the user to pay.
     user = User.find( params[:id] )
 
-    # Charge $10.
-    amount = 1000
+    # Charge $900.
+    amount = 90000
     # Calculate the fee amount that goes to the application.
-    fee = (amount * Rails.application.secrets.fee_percentage).to_i
+    fee = (amount).to_i
 
     begin
       charge_attrs = {
         amount: amount,
         currency: user.currency,
         source: params[:token],
-        description: "Test Charge via Stripe Connect",
+        description: "Charge via Stripe",
         application_fee: fee
       }
 

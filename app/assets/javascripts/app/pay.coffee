@@ -38,6 +38,6 @@ $(document).ready ->
     form.addClass( 'processing' )
 
     handler.open
-      name: 'Rails Connect Example'
-      description: '$10 w/ 10% fees'
-      amount: 1000
+      name: '30 Attorney-written Articles'
+      description: '$900'
+      amount: 90000

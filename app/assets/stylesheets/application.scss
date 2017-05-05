@@ -47,7 +47,9 @@ p:last-child {
 .alert {
   background: white !important;
 }
-
+p.no-display {
+  display:none;
+}
 form {
   h2 {
     margin-top: 0;

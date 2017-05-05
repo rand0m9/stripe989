@@ -8,21 +8,11 @@
 
   .panel.panel-primary.home
     .panel-body
-      %h1 Rails + Stripe Connect Example
+      %h1 Legally Marketing Payment Center
 
       %p
-        This application demonstrates the basics of implementing a
-        %br
-        %a{ href: 'https://stripe.com/docs/connect' } Stripe Connect
-        application in Rails.
-
-      .alert.alert-warning
-        Please be sure you've read the
-        %a{ href: "#{Rails.configuration.github_url}/blob/master/README.markdown" } README
-        and run the
-        = succeed '.' do
-          %a{ href: "#{Rails.configuration.github_url}/blob/master/lib/tasks/setup.rake" } setup script
-
+        Powered by Stripe.
+      %br
       .buttons
         - unless fresh
           %a.btn.btn-primary.btn-lg{ href: new_sessions_path } Login

@@ -56,8 +56,6 @@ setupFieldsNeeded = ->
         e.preventDefault()
         Stripe.bankAccount.createToken form, ( _, resp ) ->
           if resp.error
-            button.removeClass('disabled').val('Save Info')
-            alert( resp.error.message )
           else
             tokenField.val( resp.id )
             form.get(0).submit()
